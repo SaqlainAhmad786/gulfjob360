@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --blue: #006BFF;
+    --light-blue: #08C2FF;
+    --blue-bg: #BCF2F6;
+    --yellow: #FFF100;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+
+.customContainer {
+    max-width: 80%;
+    margin-inline: auto;
+}
+
+@media (width<568px) {
+    .customContainer {
+        max-width: 95%;
+    }
+}

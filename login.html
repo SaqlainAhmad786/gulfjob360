@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | GulfJob360</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="h-[100dvh] flex items-center justify-center bg-gray-50 bg-gray-300 px-4 sm:px-6 lg:px-8">
+        <div class="relative ">
+            <div
+                class="w-[320px] min-h-96 px-8 py-6 mt-4 text-left bg-white bg-white border border-gray-300 rounded-xl shadow-lg">
+                <div class="flex flex-col justify-center items-center h-full select-none">
+                    <div class="flex flex-col items-center justify-center gap-2 mb-6">
+                        <img src="./assets/logo.png" class="w-16" />
+                        <h1 class="m-0 text-[16px] font-semibold text-neutral-800">Login to your Account</h1>
+                    </div>
+                    <div class="w-full flex flex-col gap-2">
+                        <label class="font-semibold text-xs text-gray-500 ">Username</label>
+                        <input
+                            class="border rounded-lg px-3 py-2 mb-3 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
+                            placeholder="Username" />
+
+                    </div>
+                </div>
+                <div class="w-full flex flex-col gap-2">
+                    <label class="font-semibold text-xs text-gray-500 ">Password</label>
+                    <input type="password"
+                        class="border rounded-lg px-3 py-2 mb-2 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
+                        placeholder="••••••••" />
+                </div>
+                <div class="flex items-center gap-2 mb-2">
+                    <input type="checkbox" name="remember" id="remember" />
+                    <label for="remember" class="text-xs text-gray-600">Remember me</label>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="inline-block py-1 px-8 bg-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg cursor-pointer select-none">
+                        LOGIN</button>
+                </div>
+                <div class="mt-4">
+                    <p class="text-xs text-center text-gray-400">Don't` have an account?
+                        <a href="./signup.html" class="font-medium text-blue-500 hover:underline">Sign up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
