@@ -2,20 +2,18 @@ function handleSideBar() {
     document.getElementById("my-drawer-2").checked = false
 }
 
-let lastScrollY = window.scrollY;
-
 window.addEventListener("scroll", () => {
     const bottomNavbar = document.querySelector(".bottomNavbar");
     const scrollY = window.scrollY;
-    const bottomReached = window.innerHeight + scrollY >= document.body.offsetHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const windowHeight = window.innerHeight;
+    const bottomReached = Math.ceil(windowHeight + scrollY) >= documentHeight;
 
     if (bottomReached) {
-        // Hide navbar when at the bottom
+        // Hide navbar when fully scrolled to the bottom
         bottomNavbar.classList.add("translate-y-[100%]");
     } else {
-        // Show navbar when scrolling up
+        // Show navbar otherwise
         bottomNavbar.classList.remove("translate-y-[100%]");
     }
-
-    lastScrollY = scrollY;
 });

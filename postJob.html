@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div id=""
+    <div
         class="bottomNavbar lg:hidden md:hidden fixed duration-300 bottom-0 w-full bg-white left-0 z-10 shadow-[0px_0px_6px_0px_rgba(0,0,0,0.2)]">
         <div class="flex justify-around items-center py-1">
             <a href="" class="text-center">
@@ -528,6 +528,28 @@
             option.textContent = month; // month name
             monthSelect.appendChild(option);
         });
+
+
+    </script>
+
+    <script>
+        let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+    const bottomNavbar = document.querySelector(".bottomNavbar");
+    const scrollY = window.scrollY;
+    const bottomReached = window.innerHeight + scrollY >= document.body.offsetHeight;
+
+    if (bottomReached) {
+        // Hide navbar when at the bottom
+        bottomNavbar.classList.add("translate-y-[100%]");
+    } else {
+        // Show navbar when scrolling up
+        bottomNavbar.classList.remove("translate-y-[100%]");
+    }
+
+    lastScrollY = scrollY;
+});
     </script>
 </body>
 
