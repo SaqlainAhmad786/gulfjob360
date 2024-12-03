@@ -17,69 +17,157 @@
 </head>
 
 <body>
+    <div id="bottomNavbar"
+        class="lg:hidden md:hidden fixed duration-300 bottom-0 w-full bg-white left-0 z-10 shadow-[0px_0px_6px_0px_rgba(0,0,0,0.2)]">
+        <div class="flex justify-around items-center py-1">
+            <a href="" class="text-center">
+                <i class="fa-solid fa-user-tie text-xl text-neutral-700"></i>
+                <p class="text-xs font-semibold leading-none text-neutral-800">JOBS</p>
+            </a>
+            <a href="https://wafid.com/" target="_blank" class="text-center">
+                <i class="fa-solid fa-notes-medical text-xl text-neutral-700"></i>
+                <p class="text-xs font-semibold leading-none text-neutral-800">MEDICAL</p>
+            </a>
+            <a href="" class="text-center">
+                <i class="fa-solid fa-passport text-xl text-neutral-700"></i>
+                <p class="text-xs font-semibold leading-none text-neutral-800">VISA</p>
+            </a>
+            <a href="" class="text-center">
+                <i class="fa-solid fa-user text-xl text-neutral-700"></i>
+                <p class="text-xs font-semibold leading-none text-neutral-800">PROFILE</p>
+            </a>
+        </div>
+    </div>
     <div class="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
-            <header class="lg:pt-5 md:pt-5 sm:pt-5 py-3 lg:relative fixed w-full z-10 bg-gray-100">
-                <div class="customContainer flex items-center lg:justify-end justify-between">
-                    <div class="flex gap-4 items-center">
-                        <div class='w-[240px] mx-auto lg:order-1 order-2'>
-                            <div
-                                class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
-                                <div class="grid place-items-center h-full w-12 text-gray-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                    </svg>
-                                </div>
-                                <input class="peer h-full w-full outline-none text-sm text-inherit text-gray-700 pr-2"
-                                    type="text" id="search" placeholder="Search job by place, title..." />
-                            </div>
+            <header class="lg:pt-5 md:pt-5 sm:pt-5 py-2 bg-gray-100">
+                <div class="customContainer flex justify-between gap-1 items-center">
+                    <div class="w-full flex items-center justify-between gap-1">
+                        <div class="flex items-center gap-1">
+                            <img src="./assets/logo.png" class="w-12 h-12 object-contain" alt="">
+                            <span class="self-center text-2xl font-semibold"><span
+                                    class="text-[#229D46]">GULF</span><span class="text-[#BF0126]">JOB</span>360</span>
                         </div>
+                        <label for="my-drawer-2" class="drawer-button lg:hidden w-[36px] cursor-pointer">
+                            <img src="./assets/bars.svg" alt="" />
+                        </label>
+                    </div>
+                    <div class="gap-1 items-center lg:flex hidden">
+                        <div
+                            class="w-[240px] relative flex items-center h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
+                            <div class="grid place-items-center h-full w-12 text-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                            <input class="peer h-full w-full outline-none text-sm text-inherit text-gray-700 pr-2"
+                                type="text" id="search" placeholder="Search job by place, title..." />
+                        </div>
+                        <a href="./postJob.html" class="flex flex-col justify-center items-center text-[--blue]">
+                            <i class="fa-regular fa-pen-to-square text-2xl"></i>
+                            <span class="leading-none text-[10px] font-semibold text-center">Post a Job</span>
+                        </a>
                         <a href="./login.html"
-                            class="inline-block h-12 w-12 text-center lg:order-2 order-1 hover:bg-gray-300 rounded-md duration-200">
+                            class="inline-block h-12 w-12 text-center hover:bg-gray-300 rounded-md duration-200">
                             <i class="fa-solid fa-user text-2xl text-[--blue]"></i>
                             <p class="text-[--blue] text-xs font-medium leading-none">Login</p>
                         </a>
                     </div>
-                    <label for="my-drawer-2" class="drawer-button lg:hidden w-[36px] cursor-pointer">
-                        <img src="./assets/bars.svg" alt="" />
-                    </label>
+
                 </div>
             </header>
-            <div class="customContainer text-sm flex items-center justify-between lg:mt-0 mt-20 mb-3">
+            <div class="customContainer lg:hidden md:hidden flex justify-between mb-2">
+                <div class="flex gap-1 items-center">
+                    <div class='mx-auto lg:order-1 order-2'>
+                        <div
+                            class=" relative flex items-center h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
+                            <div class="grid place-items-center h-full w-12 text-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                            <input class="peer h-full w-full outline-none text-sm text-inherit text-gray-700 pr-2"
+                                type="text" id="search" placeholder="Search job by place, title..." />
+                        </div>
+                    </div>
+                    <a href="./login.html"
+                        class="inline-block h-12 w-12 text-center lg:order-2 order-1 hover:bg-gray-300 rounded-md duration-200">
+                        <i class="fa-solid fa-user text-2xl text-[--blue]"></i>
+                        <p class="text-[--blue] text-xs font-medium leading-none">Login</p>
+                    </a>
+                </div>
+                <a href="./postJob.html" class="flex flex-col justify-center items-center">
+                    <i class="fa-regular fa-pen-to-square text-2xl text-[--blue]"></i>
+                    <span class="leading-none text-[10px] font-semibold text-center">Post a Job</span>
+                </a>
+            </div>
+            <div class="customContainer my-2">
+                <p class="text-lg font-medium mb-1">Jobs by Location</p>
+                <div class="flex gap-1 flex-wrap">
+                    <a href="#" class="text-center">
+                        <img src="./assets/kuwait-flag.jpeg"
+                            class="w-16 h-16 rounded-[100vh] object-cover border-2 border-[#BF0126] p-[2px]" alt="">
+                        <p class="text-xs font-medium">Kuwait</p>
+                    </a>
+                    <a href="#" class="text-center">
+                        <img src="./assets/saudi-arabia-flag.jpeg"
+                            class="w-16 h-16 rounded-[100vh] object-cover border-2 border-[#BF0126] p-[2px]" alt="">
+                        <p class="text-xs font-medium leading-none">Saudi <br>Arabia</p>
+                    </a>
+                    <a href="#" class="text-center">
+                        <img src="./assets/dubai-flag.jpeg"
+                            class="w-16 h-16 rounded-[100vh] object-cover border-2 border-[#BF0126] p-[2px]" alt="">
+                        <p class="text-xs font-medium">Dubai</p>
+                    </a>
+                    <a href="#" class="text-center">
+                        <img src="./assets/qatar-flag.jpeg"
+                            class="w-16 h-16 rounded-[100vh] object-cover border-2 border-[#BF0126] p-[2px]" alt="">
+                        <p class="text-xs font-medium">Qatar</p>
+                    </a>
+                    <a href="#" class="text-center">
+                        <img src="./assets/bahrain-flag.jpeg"
+                            class="w-16 h-16 rounded-[100vh] object-cover border-2 border-[#BF0126] p-[2px]" alt="">
+                        <p class="text-xs font-medium">Bahrain</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="customContainer text-sm flex items-center justify-between my-2">
                 <h1 class="lg:text-2xl md:text-2xl text-xl text-neutral-800 font-semibold">Latest Jobs in Qatar</h1>
                 <span class="text-gray-400">Page: <span class="font-semibold text-gray-800">1</span> of 4</span>
             </div>
             <div class="customContainer grid grid-cols-1 gap-3">
                 <div class="bg-white border rounded-lg p-3 pb-1 relative shadow-[4px_4px_8px_rgb(0,0,0,0.2)]">
                     <p class="text-lg font-semibold">House Driver</p>
-                    <p class="text-gray-600 text-xs">Caretaker</p>
-                    <div class="space-y-1 ">
-                        <p class="text-gray-400 text-sm mt-1"><i
+                    <p class="text-gray-600 font-medium text-xs">Caretaker</p>
+                    <div class="space-y-1">
+                        <p class="text-gray-600 text-sm mt-1"><i
                                 class="fa-solid fa-location-dot text-[--blue] mr-1 text-xs"></i> Doha, Qatar</p>
-                        <p class="text-gray-400 text-sm"><i
+                        <p class="text-gray-600 text-sm"><i
                                 class="fa-solid fa-money-bill text-[--blue] mr-1 text-xs"></i> 254KD
                         </p>
-                        <p class="text-gray-400 text-sm"><i class="fa-solid fa-building text-[--blue] mr-1 text-xs"></i>
+                        <p class="text-gray-600 text-sm"><i class="fa-solid fa-building text-[--blue] mr-1 text-xs"></i>
                             Company
                             name</p>
-                        <p class="text-gray-400 text-sm"><i class="fa-solid fa-comment text-[--blue] mr-1 text-xs"></i>
+                        <p class="text-gray-600 text-sm"><i class="fa-solid fa-comment text-[--blue] mr-1 text-xs"></i>
                             Lorem
                             ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at.</p>
                     </div>
-                    <!-- <p class="text-gray-500 text-[10px] mt-2 text-center">Posted on: Today</p> -->
-                    <div class="grid grid-cols-2 border-t divide-x mt-2">
+                    <div class="grid grid-cols-2 gap-2 mt-2 mb-1">
                         <a href="tel:123456789"
-                            class="flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 py-3 duration-200">
-                            <i class="fa-solid fa-phone text-[--blue] text-lg"></i>
-                            <span>Call now</span>
+                            class="bg-green-600 rounded-lg text-white flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 hover:text-green-600 py-2 duration-200">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Whatsapp</span>
                         </a>
                         <a href="tel:123456789"
-                            class="flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 py-3 duration-200">
-                            <i class="fa-brands fa-whatsapp text-green-600 text-lg"></i>
-                            <span>Whatsapp</span>
+                            class="bg-[--blue] rounded-lg text-white flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 hover:text-[--blue] py-2 duration-200">
+                            <span>Job Details</span>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </div>
                     <a href="#"><i class="fa-solid fa-share text-[--blue] text-lg absolute right-3 top-2"></i></a>
@@ -100,17 +188,16 @@
                             Lorem
                             ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at.</p>
                     </div>
-                    <!-- <p class="text-gray-500 text-[10px] mt-2 text-center">Posted on: Today</p> -->
-                    <div class="grid grid-cols-2 border-t divide-x mt-2">
+                    <div class="grid grid-cols-2 gap-2 mt-2 mb-1">
                         <a href="tel:123456789"
-                            class="flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 py-3 duration-200">
-                            <i class="fa-solid fa-phone text-[--blue] text-lg"></i>
-                            <span>Call now</span>
+                            class="bg-green-600 rounded-lg text-white flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 hover:text-green-600 py-2 duration-200">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Whatsapp</span>
                         </a>
                         <a href="tel:123456789"
-                            class="flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 py-3 duration-200">
-                            <i class="fa-brands fa-whatsapp text-green-600 text-lg"></i>
-                            <span>Whatsapp</span>
+                            class="bg-[--blue] rounded-lg text-white flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 hover:text-[--blue] py-2 duration-200">
+                            <span>Job Details</span>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </div>
                     <a href="#"><i class="fa-solid fa-share text-[--blue] text-lg absolute right-3 top-2"></i></a>
@@ -131,17 +218,16 @@
                             Lorem
                             ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at.</p>
                     </div>
-                    <!-- <p class="text-gray-500 text-[10px] mt-2 text-center">Posted on: Today</p> -->
-                    <div class="grid grid-cols-2 border-t divide-x mt-2">
+                    <div class="grid grid-cols-2 gap-2 mt-2 mb-1">
                         <a href="tel:123456789"
-                            class="flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 py-3 duration-200">
-                            <i class="fa-solid fa-phone text-[--blue] text-lg"></i>
-                            <span>Call now</span>
+                            class="bg-green-600 rounded-lg text-white flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 hover:text-green-600 py-2 duration-200">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Whatsapp</span>
                         </a>
                         <a href="tel:123456789"
-                            class="flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 py-3 duration-200">
-                            <i class="fa-brands fa-whatsapp text-green-600 text-lg"></i>
-                            <span>Whatsapp</span>
+                            class="bg-[--blue] rounded-lg text-white flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 hover:text-[--blue] py-2 duration-200">
+                            <span>Job Details</span>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </div>
                     <a href="#"><i class="fa-solid fa-share text-[--blue] text-lg absolute right-3 top-2"></i></a>
