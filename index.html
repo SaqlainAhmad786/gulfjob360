@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./app.js" ></script>
+    <script src="./app.js"></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             </a>
             <a href="" class="text-center">
                 <i class="fa-solid fa-passport text-xl text-neutral-700"></i>
-                <p class="text-xs font-semibold leading-none text-neutral-800">VISA</p>
+                <p class="text-xs font-semibold leading-none text-neutral-800">VISA CHECK</p>
             </a>
             <a href="" class="text-center">
                 <i class="fa-solid fa-user text-xl text-neutral-700"></i>
@@ -53,9 +53,9 @@
                             <img src="./assets/bars.svg" alt="" />
                         </label>
                     </div>
-                    <div class="gap-1 items-center lg:flex hidden">
+                    <div class="lg:flex hidden gap-2 items-center">
                         <div
-                            class="w-[240px] relative flex items-center h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
+                            class="w-[280px] relative flex items-center h-10 rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
                             <div class="grid place-items-center h-full w-12 text-gray-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -66,45 +66,41 @@
                             <input class="peer h-full w-full outline-none text-sm text-inherit text-gray-700 pr-2"
                                 type="text" id="search" placeholder="Search job by place, title..." />
                         </div>
-                        <a href="./postJob.html" class="flex flex-col justify-center items-center text-[--blue]">
-                            <i class="fa-regular fa-pen-to-square text-2xl"></i>
-                            <span class="leading-none text-[10px] font-semibold text-center">Post a Job</span>
+                        <a href="./postJob.html" class="">
+                            <img src="./assets/add-post.png"
+                                class="w-10 h-10 object-contain hover:scale-105 duration-200" alt="">
                         </a>
-                        <a href="./login.html"
-                            class="inline-block h-12 w-12 text-center hover:bg-gray-300 rounded-md duration-200">
-                            <i class="fa-solid fa-user text-2xl text-[--blue]"></i>
-                            <p class="text-[--blue] text-xs font-medium leading-none">Login</p>
+                        <a href="./login.html" class="" title="Login">
+                            <img src="./assets/profile-user.png"
+                                class="w-10 h-10 object-contain hover:scale-105 duration-200" alt="">
                         </a>
                     </div>
 
                 </div>
             </header>
-            <div class="customContainer lg:hidden md:hidden flex justify-between mb-2">
-                <div class="flex gap-1 items-center">
-                    <div class='mx-auto lg:order-1 order-2'>
-                        <div
-                            class=" relative flex items-center h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
-                            <div class="grid place-items-center h-full w-12 text-gray-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                </svg>
-                            </div>
-                            <input class="peer h-full w-full outline-none text-sm text-inherit text-gray-700 pr-2"
-                                type="text" id="search" placeholder="Search job by place, title..." />
+            <div class="customContainer lg:hidden md:hidden mb-2">
+                <div class="flex justify-between items-center gap-2">
+                    <a href="./login.html" class="" title="Login">
+                        <img src="./assets/profile-user.png" class="w-8 h-8 object-contain hover:scale-105 duration-200"
+                            alt="">
+                    </a>
+                    <div
+                        class="relative flex items-center h-10 w-full rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
+                        <div class="grid place-items-center h-full w-12 text-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
                         </div>
+                        <input class="peer h-full w-full outline-none text-sm text-inherit text-gray-700 pr-2"
+                            type="text" id="search" placeholder="Search job by place, title..." />
                     </div>
-                    <a href="./login.html"
-                        class="inline-block h-12 w-12 text-center lg:order-2 order-1 hover:bg-gray-300 rounded-md duration-200">
-                        <i class="fa-solid fa-user text-2xl text-[--blue]"></i>
-                        <p class="text-[--blue] text-xs font-medium leading-none">Login</p>
+                    <a href="./postJob.html" class="">
+                        <img src="./assets/add-post.png" class="w-8 h-8 object-contain hover:scale-105 duration-200"
+                            alt="">
                     </a>
                 </div>
-                <a href="./postJob.html" class="flex flex-col justify-center items-center">
-                    <i class="fa-regular fa-pen-to-square text-2xl text-[--blue]"></i>
-                    <span class="leading-none text-[10px] font-semibold text-center">Post a Job</span>
-                </a>
             </div>
             <div class="customContainer my-2">
                 <p class="text-lg font-medium mb-1">Jobs by Location</p>
@@ -142,23 +138,24 @@
                 <span class="text-gray-400">Page: <span class="font-semibold text-gray-800">1</span> of 4</span>
             </div>
             <div class="customContainer grid grid-cols-1 gap-3">
-                <div class="bg-white border rounded-lg p-3 pb-1 relative shadow-[4px_4px_8px_rgb(0,0,0,0.2)]">
-                    <p class="text-lg font-semibold">House Driver</p>
-                    <p class="text-gray-600 font-medium text-xs">Caretaker</p>
-                    <div class="space-y-1">
-                        <p class="text-gray-600 text-sm mt-1"><i
-                                class="fa-solid fa-location-dot text-[--blue] mr-1 text-xs"></i> Doha, Qatar</p>
-                        <p class="text-gray-600 text-sm"><i
-                                class="fa-solid fa-money-bill text-[--blue] mr-1 text-xs"></i> 254KD
-                        </p>
-                        <p class="text-gray-600 text-sm"><i class="fa-solid fa-building text-[--blue] mr-1 text-xs"></i>
-                            Company
-                            name</p>
-                        <p class="text-gray-600 text-sm"><i class="fa-solid fa-comment text-[--blue] mr-1 text-xs"></i>
-                            Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at.</p>
+                <div class="bg-white border rounded-lg relative shadow-[4px_4px_8px_rgb(0,0,0,0.2)]">
+                    <div class="border-b shadow-sm p-3">
+                        <p class="text-lg font-semibold leading-none">House Driver</p>
+                        <p class="text-gray-600 font-medium text-xs leading-none">Caretaker</p>
                     </div>
-                    <div class="grid grid-cols-2 gap-2 mt-2 mb-1">
+                    <div class="space-y-1 px-3 py-1">
+                        <p class="text-gray-600 text-sm mt-1"><span class="font-semibold text-xs">Location:</span> Doha,
+                            Qatar</p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Salary:</span> 254KD
+                        </p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Company:</span> Company
+                            name</p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Description:</span> Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at.</p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Posted on:</span>
+                            12/12/2022</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-1 px-3 my-2">
                         <a href="tel:123456789"
                             class="bg-green-600 rounded-lg text-white flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 hover:text-green-600 py-2 duration-200">
                             <i class="fa-brands fa-whatsapp text-lg"></i>
@@ -170,25 +167,27 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </div>
-                    <a href="#"><i class="fa-solid fa-share text-[--blue] text-lg absolute right-3 top-2"></i></a>
+                    <a href="#" class="absolute right-3 top-3"><i
+                            class="fa-solid fa-share text-[--blue] text-lg"></i></a>
                 </div>
-                <div class="bg-white border rounded-lg p-3 pb-1 relative shadow-[4px_4px_8px_rgb(0,0,0,0.2)]">
-                    <p class="text-lg font-semibold">House Driver</p>
-                    <p class="text-gray-600 text-xs">Caretaker</p>
-                    <div class="space-y-1 ">
-                        <p class="text-gray-400 text-sm mt-1"><i
-                                class="fa-solid fa-location-dot text-[--blue] mr-1 text-xs"></i> Doha, Qatar</p>
-                        <p class="text-gray-400 text-sm"><i
-                                class="fa-solid fa-money-bill text-[--blue] mr-1 text-xs"></i> 254KD
-                        </p>
-                        <p class="text-gray-400 text-sm"><i class="fa-solid fa-building text-[--blue] mr-1 text-xs"></i>
-                            Company
-                            name</p>
-                        <p class="text-gray-400 text-sm"><i class="fa-solid fa-comment text-[--blue] mr-1 text-xs"></i>
-                            Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at.</p>
+                <div class="bg-white border rounded-lg relative shadow-[4px_4px_8px_rgb(0,0,0,0.2)]">
+                    <div class="border-b shadow-sm p-3">
+                        <p class="text-lg font-semibold leading-none">House Driver</p>
+                        <p class="text-gray-600 font-medium text-xs leading-none">Caretaker</p>
                     </div>
-                    <div class="grid grid-cols-2 gap-2 mt-2 mb-1">
+                    <div class="space-y-1 px-3 py-1">
+                        <p class="text-gray-600 text-sm mt-1"><span class="font-semibold text-xs">Location:</span> Doha,
+                            Qatar</p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Salary:</span> 254KD
+                        </p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Company:</span> Company
+                            name</p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Description:</span> Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at.</p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Posted on:</span>
+                            12/12/2022</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-1 px-3 my-2">
                         <a href="tel:123456789"
                             class="bg-green-600 rounded-lg text-white flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 hover:text-green-600 py-2 duration-200">
                             <i class="fa-brands fa-whatsapp text-lg"></i>
@@ -200,25 +199,27 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </div>
-                    <a href="#"><i class="fa-solid fa-share text-[--blue] text-lg absolute right-3 top-2"></i></a>
+                    <a href="#" class="absolute right-3 top-3"><i
+                            class="fa-solid fa-share text-[--blue] text-lg"></i></a>
                 </div>
-                <div class="bg-white border rounded-lg p-3 pb-1 relative shadow-[4px_4px_8px_rgb(0,0,0,0.2)]">
-                    <p class="text-lg font-semibold">House Driver</p>
-                    <p class="text-gray-600 text-xs">Caretaker</p>
-                    <div class="space-y-1 ">
-                        <p class="text-gray-400 text-sm mt-1"><i
-                                class="fa-solid fa-location-dot text-[--blue] mr-1 text-xs"></i> Doha, Qatar</p>
-                        <p class="text-gray-400 text-sm"><i
-                                class="fa-solid fa-money-bill text-[--blue] mr-1 text-xs"></i> 254KD
-                        </p>
-                        <p class="text-gray-400 text-sm"><i class="fa-solid fa-building text-[--blue] mr-1 text-xs"></i>
-                            Company
-                            name</p>
-                        <p class="text-gray-400 text-sm"><i class="fa-solid fa-comment text-[--blue] mr-1 text-xs"></i>
-                            Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at.</p>
+                <div class="bg-white border rounded-lg relative shadow-[4px_4px_8px_rgb(0,0,0,0.2)]">
+                    <div class="border-b shadow-sm p-3">
+                        <p class="text-lg font-semibold leading-none">House Driver</p>
+                        <p class="text-gray-600 font-medium text-xs leading-none">Caretaker</p>
                     </div>
-                    <div class="grid grid-cols-2 gap-2 mt-2 mb-1">
+                    <div class="space-y-1 px-3 py-1">
+                        <p class="text-gray-600 text-sm mt-1"><span class="font-semibold text-xs">Location:</span> Doha,
+                            Qatar</p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Salary:</span> 254KD
+                        </p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Company:</span> Company
+                            name</p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Description:</span> Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, at.</p>
+                        <p class="text-gray-600 text-sm"><span class="font-semibold text-xs">Posted on:</span>
+                            12/12/2022</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-1 px-3 my-2">
                         <a href="tel:123456789"
                             class="bg-green-600 rounded-lg text-white flex items-center justify-center gap-1 text-center text-sm font-medium tracking-wide hover:bg-gray-200 hover:text-green-600 py-2 duration-200">
                             <i class="fa-brands fa-whatsapp text-lg"></i>
@@ -230,7 +231,8 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </div>
-                    <a href="#"><i class="fa-solid fa-share text-[--blue] text-lg absolute right-3 top-2"></i></a>
+                    <a href="#" class="absolute right-3 top-3"><i
+                            class="fa-solid fa-share text-[--blue] text-lg"></i></a>
                 </div>
             </div>
             <div class="flex justify-center space-x-1 text-gray-900 my-5">
@@ -261,39 +263,6 @@
                 </button>
             </div>
             <section>
-                <div class="customContainer my-5 mt-20">
-                    <p class="text-xl font-semibold">See also</p>
-                    <div class="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-2 mt-3">
-                        <a href="#"
-                            class="text-white text-center bg-[--blue] hover:bg-blue-400 duration-200 px-3 py-1 rounded-full font-semibold">Jobs
-                            in
-                            Doha</a>
-                        <a href="#"
-                            class="text-white text-center bg-[--blue] hover:bg-blue-400 duration-200 px-3 py-1 rounded-full font-semibold">Jobs
-                            in
-                            Qatar</a>
-                        <a href="#"
-                            class="text-white text-center bg-[--blue] hover:bg-blue-400 duration-200 px-3 py-1 rounded-full font-semibold">Jobs
-                            in
-                            Dubai</a>
-                        <a href="#"
-                            class="text-white text-center bg-[--blue] hover:bg-blue-400 duration-200 px-3 py-1 rounded-full font-semibold">Jobs
-                            in
-                            Saudi</a>
-                        <a href="#"
-                            class="text-white text-center bg-[--blue] hover:bg-blue-400 duration-200 px-3 py-1 rounded-full font-semibold">Jobs
-                            in
-                            Oman</a>
-                        <a href="#"
-                            class="text-white text-center bg-[--blue] hover:bg-blue-400 duration-200 px-3 py-1 rounded-full font-semibold">Jobs
-                            in
-                            Bahrain</a>
-                        <a href="#"
-                            class="text-white text-center bg-[--blue] hover:bg-blue-400 duration-200 px-3 py-1 rounded-full font-semibold">Jobs
-                            in
-                            Kuwait</a>
-                    </div>
-                </div>
                 <div class="customContainer my-5">
                     <p class="text-xl font-semibold">Popular Job Roles</p>
                     <div class="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 mt-3">

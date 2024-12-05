@@ -30,7 +30,7 @@
             </a>
             <a href="" class="text-center">
                 <i class="fa-solid fa-passport text-xl text-neutral-700"></i>
-                <p class="text-xs font-semibold leading-none text-neutral-800">VISA</p>
+                <p class="text-xs font-semibold leading-none text-neutral-800">VISA CHECK</p>
             </a>
             <a href="" class="text-center">
                 <i class="fa-solid fa-user text-xl text-neutral-700"></i>
@@ -53,9 +53,9 @@
                             <img src="./assets/bars.svg" alt="" />
                         </label>
                     </div>
-                    <div class="gap-1 items-center lg:flex hidden">
+                    <div class="lg:flex hidden gap-2 items-center">
                         <div
-                            class="w-[240px] relative flex items-center h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
+                            class="w-[280px] relative flex items-center h-10 rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
                             <div class="grid place-items-center h-full w-12 text-gray-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -66,45 +66,41 @@
                             <input class="peer h-full w-full outline-none text-sm text-inherit text-gray-700 pr-2"
                                 type="text" id="search" placeholder="Search job by place, title..." />
                         </div>
-                        <a href="./postJob.html" class="flex flex-col justify-center items-center text-[--blue]">
-                            <i class="fa-regular fa-pen-to-square text-2xl"></i>
-                            <span class="leading-none text-[10px] font-semibold text-center">Post a Job</span>
+                        <a href="./postJob.html" class="">
+                            <img src="./assets/add-post.png"
+                                class="w-10 h-10 object-contain hover:scale-105 duration-200" alt="">
                         </a>
-                        <a href="./login.html"
-                            class="inline-block h-12 w-12 text-center hover:bg-gray-300 rounded-md duration-200">
-                            <i class="fa-solid fa-user text-2xl text-[--blue]"></i>
-                            <p class="text-[--blue] text-xs font-medium leading-none">Login</p>
+                        <a href="./login.html" class="" title="Login">
+                            <img src="./assets/profile-user.png"
+                                class="w-10 h-10 object-contain hover:scale-105 duration-200" alt="">
                         </a>
                     </div>
 
                 </div>
             </header>
-            <div class="customContainer lg:hidden md:hidden flex justify-between mb-2">
-                <div class="flex gap-1 items-center">
-                    <div class='mx-auto lg:order-1 order-2'>
-                        <div
-                            class=" relative flex items-center h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
-                            <div class="grid place-items-center h-full w-12 text-gray-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                </svg>
-                            </div>
-                            <input class="peer h-full w-full outline-none text-sm text-inherit text-gray-700 pr-2"
-                                type="text" id="search" placeholder="Search job by place, title..." />
+            <div class="customContainer lg:hidden md:hidden mb-2">
+                <div class="flex justify-between items-center gap-2">
+                    <a href="./login.html" class="" title="Login">
+                        <img src="./assets/profile-user.png" class="w-8 h-8 object-contain hover:scale-105 duration-200"
+                            alt="">
+                    </a>
+                    <div
+                        class="relative flex items-center h-10 w-full rounded-lg focus-within:shadow-lg bg-white overflow-hidden duration-200">
+                        <div class="grid place-items-center h-full w-12 text-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
                         </div>
+                        <input class="peer h-full w-full outline-none text-sm text-inherit text-gray-700 pr-2"
+                            type="text" id="search" placeholder="Search job by place, title..." />
                     </div>
-                    <a href="./login.html"
-                        class="inline-block h-12 w-12 text-center lg:order-2 order-1 hover:bg-gray-300 rounded-md duration-200">
-                        <i class="fa-solid fa-user text-2xl text-[--blue]"></i>
-                        <p class="text-[--blue] text-xs font-medium leading-none">Login</p>
+                    <a href="./postJob.html" class="">
+                        <img src="./assets/add-post.png" class="w-8 h-8 object-contain hover:scale-105 duration-200"
+                            alt="">
                     </a>
                 </div>
-                <a href="./postJob.html" class="flex flex-col justify-center items-center">
-                    <i class="fa-regular fa-pen-to-square text-2xl text-[--blue]"></i>
-                    <span class="leading-none text-[10px] font-semibold text-center">Post a Job</span>
-                </a>
             </div>
             <main class="bg-gray-100 grid place-items-center">
                 <div
@@ -535,21 +531,21 @@
     <script>
         let lastScrollY = window.scrollY;
 
-window.addEventListener("scroll", () => {
-    const bottomNavbar = document.querySelector(".bottomNavbar");
-    const scrollY = window.scrollY;
-    const bottomReached = window.innerHeight + scrollY >= document.body.offsetHeight;
+        window.addEventListener("scroll", () => {
+            const bottomNavbar = document.querySelector(".bottomNavbar");
+            const scrollY = window.scrollY;
+            const bottomReached = window.innerHeight + scrollY >= document.body.offsetHeight;
 
-    if (bottomReached) {
-        // Hide navbar when at the bottom
-        bottomNavbar.classList.add("translate-y-[100%]");
-    } else {
-        // Show navbar when scrolling up
-        bottomNavbar.classList.remove("translate-y-[100%]");
-    }
+            if (bottomReached) {
+                // Hide navbar when at the bottom
+                bottomNavbar.classList.add("translate-y-[100%]");
+            } else {
+                // Show navbar when scrolling up
+                bottomNavbar.classList.remove("translate-y-[100%]");
+            }
 
-    lastScrollY = scrollY;
-});
+            lastScrollY = scrollY;
+        });
     </script>
 </body>
 
