@@ -25,16 +25,17 @@ body {
     background-color: whitesmoke;
 }
 
+.bottomNavbar a i.active {
+    color: var(--blue)!important;
+}
+
 .hideScrollbar::-webkit-scrollbar {
     display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .hideScrollbar {
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
 }
 
 .customContainer {
