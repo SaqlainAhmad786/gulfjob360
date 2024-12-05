@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post Job | GulfJob360</title>
+    <title>Profile | GulfJob360</title>
     <link rel="stylesheet" href="./assets/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -117,102 +117,117 @@
                     </a>
                 </div>
             </div>
-            <main class="bg-gray-100 grid place-items-center">
-                <div
-                    class="lg:w-[70%] md:w-[75%] sm:w-[85%] w-[95%] mx-auto my-3 bg-white border border-gray-300 p-6 rounded-xl shadow-md">
-                    <h1 class="text-xl font-bold leading-tight tracking-tight text-neutral-800 md:text-2xl">
-                        <img class="w-16 h-16 mr-2 object-contain" src="./images/logo.png" alt="logo" />
-                        Post your Job in GulfJob360
-                    </h1>
+            <main class="bg-gray-100">
+                <div class="customContainer">
+                    <h1 class="lg:text-2xl md:text-2xl text-xl text-neutral-800 font-semibold my-3">Profile</h1>
+                </div>
+                <div class="customContainer bg-white rounded-lg shadow-sm overflow-hidden mb-5">
+                    <div
+                        class="bg-gradient-to-r from-violet-200 to-pink-200 h-[120px] flex justify-center items-center relative">
+                        <img src="./images/profile-user.png"
+                            class="w-24 h-24 object-contain absolute bottom-[-36px] bg-white rounded-full" alt="">
+                    </div>
+                    <div id="google_translate_element"></div>
                     <form action="">
-                        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-x-4 mt-5">
-                            <div>
-                                <div class="w-full flex flex-col gap-2">
-                                    <label class="font-semibold text-xs text-gray-500 ">Job Title</label>
+                        <div
+                            class="lg:w-[50%] md:w-[75%] sm:w-[85%] w-[95%] mx-auto w-full grid grid-cols-1 mt-10 mb-4 px-4">
+                            <div class="w-full flex flex-col gap-2">
+                                <label class="font-semibold text-xs text-gray-500 ">Full Name</label>
+                                <input
+                                    class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
+                                    placeholder="John Doe" />
+                            </div>
+                            <div class="w-full flex flex-col gap-2">
+                                <label class="font-semibold text-xs text-gray-500 ">Mobile</label>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <select name="country" id="countryCodeSelect"
+                                        class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100">
+                                        <option value="0" hidden>Country</option>
+                                    </select>
                                     <input
-                                        class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                        placeholder="Driver, House Driver etc." />
-                                </div>
-                                <div class="w-full flex flex-col gap-2">
-                                    <label class="font-semibold text-xs text-gray-500 ">Job Description</label>
-                                    <textarea
-                                        class="border resize-none rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                        rows="4"></textarea>
-                                </div>
-                                <div class="w-full flex flex-col gap-2">
-                                    <label class="font-semibold text-xs text-gray-500 ">Job Role</label>
-                                    <input
-                                        class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                        placeholder="Civil Engineer" />
-                                </div>
-                                <div class="w-full flex flex-col gap-2">
-                                    <label class="font-semibold text-xs text-gray-500 ">Qualification</label>
-                                    <input
-                                        class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                        placeholder="B.Com, BBA, BA" />
-                                </div>
-                                <div class="w-full flex flex-col gap-2">
-                                    <label class="font-semibold text-xs text-gray-500 ">Salary Range</label>
-                                    <input
-                                        class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                        placeholder="100 - 500 AED, 1000 - 2000 KWD" />
-                                </div>
-                                <div class="w-full flex flex-col gap-2">
-                                    <label class="font-semibold text-xs text-gray-500 ">Experience</label>
-                                    <input
-                                        class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                        placeholder="1-2 years, 3+ years" />
-                                </div>
-                                <div class="w-full flex flex-col gap-2">
-                                    <label class="font-semibold text-xs text-gray-500 ">Location</label>
-                                    <input
-                                        class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                        placeholder="Dubai, Abu Dhabi" />
+                                        class="col-span-2 border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
+                                        placeholder="9876543210" />
                                 </div>
                             </div>
-                            <div>
-                                <div class="w-full flex flex-col gap-2">
-                                    <label class="font-semibold text-xs text-gray-500 ">Mobile</label>
-                                    <div class="grid grid-cols-3 gap-2">
-                                        <select name="country" id="countryCodeSelect"
-                                            class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100">
-                                            <option value="0" hidden>Country</option>
-                                        </select>
-                                        <input
-                                            class="col-span-2 border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                            placeholder="9876543210" />
-                                    </div>
-                                </div>
-                                <div class="w-full flex flex-col gap-2">
-                                    <label class="font-semibold text-xs text-gray-500 ">Alternate Mobile</label>
-                                    <div class="grid grid-cols-3 gap-2">
-                                        <select name="country" id="countryCodeSelect"
-                                            class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100">
-                                            <option value="0" hidden>Country</option>
-                                        </select>
-                                        <input
-                                            class="col-span-2 border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                            placeholder="9876543210" />
-                                    </div>
-                                </div>
-                                <div class="w-full flex flex-col gap-2">
+                            <!-- <div class="w-full flex flex-col gap-2">
                                     <label class="font-semibold text-xs text-gray-500 ">Email</label>
-                                    <input type="email"
-                                        class="col-span-2 border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                        placeholder="t6Ow0@example.com" />
+                                    <input
+                                        class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
+                                        placeholder="example@mail.com" />
                                 </div>
                                 <div class="w-full flex flex-col gap-2">
-                                    <label class="font-semibold text-xs text-gray-500 ">Company Name</label>
-                                    <input type="email"
-                                        class="col-span-2 border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
-                                        placeholder="GulfJob360" />
+                                    <label class="font-semibold text-xs text-gray-500 ">Password</label>
+                                    <input
+                                        class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
+                                        placeholder="••••••••" />
+                                </div>
+                                <div class="w-full flex flex-col gap-2">
+                                    <label class="font-semibold text-xs text-gray-500 ">Confirm Password</label>
+                                    <input
+                                        class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100"
+                                        placeholder="••••••••" />
+                                </div> -->
+                            <div class="w-full flex flex-col gap-2">
+                                <label class="font-semibold text-xs text-gray-500 ">Gender</label>
+                                <select
+                                    class="border rounded-lg px-3 py-2 mb-4 text-black text-sm w-full outline-none border-gray-300 bg-gray-100">
+                                    <option value="0" hidden></option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Others</option>
+                                </select>
+                            </div>
+                            <div class="w-full flex flex-col gap-2">
+                                <label class="font-semibold text-xs text-gray-500 ">Date of Birth</label>
+                                <div class="flex gap-2 mb-4">
+                                    <select name="day" id="daySelect"
+                                        class="border rounded-lg px-3 py-2 text-black text-sm w-full outline-none border-gray-300 bg-gray-100">
+                                        <option value="0" hidden>Day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <select name="month" id="monthSelect"
+                                        class="border rounded-lg px-3 py-2 text-black text-sm w-full outline-none border-gray-300 bg-gray-100">
+                                        <option value="0" hidden>Month</option>
+                                    </select>
+                                    <select name="year" id="yearSelect"
+                                        class="border rounded-lg px-3 py-2 text-black text-sm w-full outline-none border-gray-300 bg-gray-100">
+                                        <option value="0" hidden>Year</option>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
-                        <div>
                             <button type="submit"
                                 class="inline-block w-full text-white bg-blue-500 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-blue hover:bg-primary-700 focus:ring-primary-800">
-                                Post Job</button>
+                                SAVE</button>
                         </div>
                     </form>
                 </div>
@@ -323,7 +338,7 @@
                     </a>
                 </li>
                 <li class="hover:translate-x-2 duration-200 ">
-                    <a href="./postJob.html" onclick="handleSideBar()" class="text-md active">
+                    <a href="./postJob.html" onclick="handleSideBar()" class="text-md">
                         <i class="fa-solid fa-plus me-1 font-sm text-gray-100"></i>Post Job</a>
                 </li>
                 <li class="hover:translate-x-2 duration-200">
@@ -353,10 +368,8 @@
             </ul>
         </div>
     </div>
-    <!--  -->
 
     <script>
-
         const countryCodes = [
             { code: "+93", country: "Afghanistan" },
             { code: "+355", country: "Albania" },
@@ -540,10 +553,6 @@
             monthSelect.appendChild(option);
         });
 
-
-    </script>
-
-    <script>
         let lastScrollY = window.scrollY;
 
         window.addEventListener("scroll", () => {
